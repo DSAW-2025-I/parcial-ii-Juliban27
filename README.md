@@ -56,27 +56,8 @@ api-productos-express/
 #### Crear un nuevo producto:
    ```POST /products```
 
-   Para probarlo se puede ejecutar las siguientes lineas de codigo en el endpoint products: 
+   Para probarlo se debe enviar el producto en el endpoint products: 
    https://parcial-ii-juliban27.vercel.app/products
-
-   ```
-   fetch('https://parcial-ii-juliban27.vercel.app/products', {
-   method: 'POST',
-   headers: {
-      'Content-Type': 'application/json'
-   },
-   body: JSON.stringify({
-      id: 4,
-      name: "Monitor 4K",
-      price: 349.99
-   })
-   })
-   .then(response => response.json())
-   .then(data => console.log('Producto creado:', data))
-   .catch(error => console.error('Error:', error));
-   ```
-
-
 
 
 # Web Development Exam - Backend with Express.js
