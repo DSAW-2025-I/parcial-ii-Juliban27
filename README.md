@@ -1,4 +1,45 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/CBIH3_Lj)
+
+# Julian Romero 325312
+
+## Documentación: 
+### 1. Instalación:
+
+```
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/api-productos-express.git
+cd api-productos-express
+
+# Instalar dependencias
+npm install
+
+#  Iniciar el servidor
+npm start
+"""
+```
+
+### Estructura del proyecto:
+
+api-productos-express/
+├── app.js           # Punto de entrada de la aplicación
+├── package.json     # Dependencias y scripts
+└── README.md        # Documentación
+
+### Productos: 
+
+{
+  "id": Number,      // Identificador único del producto
+  "name": String,    // Nombre del producto
+  "price": Number    // Precio del producto
+}
+
+
+### Endpoints de la API:
+
+#### Lista de todos productos:
+
+
+
 # Web Development Exam - Backend with Express.js
 
 ## Overview
