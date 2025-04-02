@@ -1,6 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/CBIH3_Lj)
 
 # Julian Romero 325312
+## Link: https://parcial-ii-juliban27.vercel.app/
 
 ## Documentación: 
 ### 1. Instalación:
@@ -37,6 +38,44 @@ api-productos-express/
 ### Endpoints de la API:
 
 #### Lista de todos productos:
+
+   https://parcial-ii-juliban27.vercel.app/products 
+   ```GET /products```
+
+   ![alt text](image.png)
+
+#### Obtener producto por id:
+   https://parcial-ii-juliban27.vercel.app/products/(id)
+   ```GET /products/:id```
+
+   Parámetros de ruta:
+      id: ID numérico del producto a buscar
+
+   ![alt text](image-1.png)
+
+#### Crear un nuevo producto:
+   ```POST /products```
+
+   Para probarlo se puede ejecutar las siguientes lineas de codigo en el endpoint products: 
+   https://parcial-ii-juliban27.vercel.app/products
+
+   ```
+   fetch('https://parcial-ii-juliban27.vercel.app/products', {
+   method: 'POST',
+   headers: {
+      'Content-Type': 'application/json'
+   },
+   body: JSON.stringify({
+      id: 4,
+      name: "Monitor 4K",
+      price: 349.99
+   })
+   })
+   .then(response => response.json())
+   .then(data => console.log('Producto creado:', data))
+   .catch(error => console.error('Error:', error));
+   ```
+
 
 
 
